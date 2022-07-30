@@ -3,9 +3,28 @@
   "displayName": "vsc-buildstream-extension",
   "description": "A VSC extension to support buildstream",
   "version": "1.0.0",
+  "publisher": "LawrenceHunter",
+  "author": {
+    "name": "Lawrence Hunter"
+  },
+  "icon": "images/BuildStream-logo-emblem-blue.png",
+  "galleryBanner": {
+    "color": "#F2F2F2",
+    "theme": "light"
+  },
   "engines": {
     "vscode": "^1.69.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LawrenceHunter/vsc-buildstream-extension"
+  },
+  "bugs": {
+    "url": "https://github.com/LawrenceHunter/vsc-buildstream-extension/issues"
+  },
+  "keywords": [
+    "buildstream bst"
+  ],
   "categories": [
     "Programming Languages"
   ],

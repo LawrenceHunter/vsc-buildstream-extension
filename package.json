@@ -1,0 +1,25 @@
+{
+  "name": "vsc-buildstream-extension",
+  "displayName": "vsc-buildstream-extension",
+  "description": "A VSC extension to support buildstream",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.69.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "bst",
+      "aliases": ["buildstream", "bst"],
+      "extensions": [".bst"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "bst",
+      "scopeName": "source.bst",
+      "path": "./syntaxes/bst.tmLanguage.json"
+    }]
+  }
+}

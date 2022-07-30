@@ -1,0 +1,67 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "buildstream",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#variable"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"name": "keyword.bst",
+			"match": "([a-zA-Z0-9-_()><.])+:"
+		},
+		"comments": {
+			"name": "comment.line.bst",
+			"match": "(#.+)"
+		},
+		"strings": {
+			"patterns": [
+				{
+					"name": "string.quoted.double.bst",
+					"begin": "\"",
+					"end": "\"",
+					"patterns": [
+						{
+							"name": "constant.character.escape.bst",
+							"match": "\\\\."
+						},
+						{
+							"name": "variable.language.bst",
+							"match": "%{[A-Za-z0-9_-]*}"
+						}
+					]
+				},
+				{
+					"name": "string.quoted.single.bst",
+					"begin": "'",
+					"end": "'",
+					"patterns": [
+						{
+							"name": "constant.character.escape.bst",
+							"match": "\\\\."
+						},
+						{
+							"name": "variable.language.bst",
+							"match": "%{[A-Za-z0-9_-]*}"
+						}
+					]
+				}
+			]
+		},
+		"variable": {
+			"name": "variable.language.bst",
+			"match": "%{[A-Za-z0-9_-]*}"
+		}
+	},
+	"scopeName": "source.bst"
+}

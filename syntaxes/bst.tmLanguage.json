@@ -34,7 +34,7 @@
 					"name": "keyword.key.bst",
 					"begin": "",
 					"end": "",
-					"match": "^\\s+[a-zA-Z]([a-zA-Z-])+:"
+					"match": "^\\s+(\\(@\\):\\s)*[a-zA-Z]([a-zA-Z-.])+:"
 				}
 			]
 		},

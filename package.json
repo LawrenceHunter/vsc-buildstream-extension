@@ -1,8 +1,8 @@
 {
   "name": "vsc-buildstream-extension",
-  "displayName": "vsc-buildstream-extension",
+  "displayName": "Buildstream syntax highlighter",
   "description": "A VSC extension to support buildstream",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "publisher": "LawrenceHunter",
   "author": {
     "name": "Lawrence Hunter"

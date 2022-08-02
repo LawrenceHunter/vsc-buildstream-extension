@@ -17,8 +17,26 @@
 	],
 	"repository": {
 		"keywords": {
-			"name": "keyword.bst",
-			"match": "([a-zA-Z0-9-_()><.])+:"
+			"patterns": [
+				{
+					"name": "keyword.top.bst",
+					"begin": "",
+					"end": "",
+					"match": "^[a-zA-Z]([a-zA-Z-])+:"
+				},
+				{
+					"name": "keyword.second.bst",
+					"begin": "",
+					"end": "",
+					"match": "^-\\s[a-zA-Z]([a-zA-Z-])+:"
+				},
+				{
+					"name": "keyword.key.bst",
+					"begin": "",
+					"end": "",
+					"match": "^\\s+[a-zA-Z]([a-zA-Z-])+:"
+				}
+			]
 		},
 		"comments": {
 			"name": "comment.line.bst",

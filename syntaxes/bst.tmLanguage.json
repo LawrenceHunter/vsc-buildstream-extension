@@ -33,7 +33,7 @@
 				{
 					"name": "keyword.key.bst",
 					"begin": "",
-					"end": "",
+					"end": "[a-zA-Z\\s]",
 					"match": "^\\s+(\\(@\\):\\s)*[a-zA-Z]([a-zA-Z-.])+:"
 				}
 			]
